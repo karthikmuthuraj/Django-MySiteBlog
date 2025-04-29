@@ -12,15 +12,21 @@
 >
 </head>
 <body>
-<header>
-<h1><a href="/">Scribbles</a></h1>
+<header class="page-header">
+    <div class="continer">
+        <h1><a href="/">Scribbles</a></h1>
+    </div>
 </header>
-{% for post in posts %}
-    <article>
-        <time>published:{{ post.published_date }}<time>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </article>
-{% endfor %}
+<main class="container">
+    <div class="row">
+        {% for post in posts %}
+            <article class="post">
+                <time class="date"> {{ post.published_date }}<time>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </article>
+        {% endfor %}
+    </div>
+</main>
 </body>
 </html>
