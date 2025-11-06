@@ -1,0 +1,7 @@
+<06-11-25>
+    1. updated the code by creating a new venv with latest python version. deleted the old "pyvenv"
+    2. the python interpreter PATH can be checked/updated using the command CNTRL+SHIFT+P
+    3. this site is a blog content and the necessary installations are in requirements.txt.
+    4. Steps to Lauch the site:
+        4.1. start the server by typing in "python.exe manage.py runserver"
+        4.2. open the site http://127.0.0.1:8000/ to see the updates/ site you have build.
